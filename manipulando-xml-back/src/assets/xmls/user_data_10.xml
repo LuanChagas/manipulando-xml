@@ -1,0 +1,8 @@
+<User>
+  <Name>Eduardo</Name>
+  <Age>19</Age>
+  <DateOfBirth>8-4-1994</DateOfBirth>
+  <FrontEnd>React JS</FrontEnd>
+  <BackEnd>Flask</BackEnd>
+  <DataFormats>Binary</DataFormats>
+</User>

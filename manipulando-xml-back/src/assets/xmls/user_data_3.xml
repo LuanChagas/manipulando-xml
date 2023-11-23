@@ -1,0 +1,8 @@
+<User>
+  <Name>Gabriel</Name>
+  <Age>23</Age>
+  <DateOfBirth>17-11-2001</DateOfBirth>
+  <FrontEnd>Ember JS</FrontEnd>
+  <BackEnd>Express</BackEnd>
+  <DataFormats>Binary</DataFormats>
+</User>

@@ -1,0 +1,8 @@
+<User>
+  <Name>Eduardo</Name>
+  <Age>29</Age>
+  <DateOfBirth>16-5-2000</DateOfBirth>
+  <FrontEnd>Vue JS</FrontEnd>
+  <BackEnd>Django</BackEnd>
+  <DataFormats>Binary</DataFormats>
+</User>

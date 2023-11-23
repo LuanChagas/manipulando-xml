@@ -1,0 +1,8 @@
+<User>
+  <Name>Bob</Name>
+  <Age>21</Age>
+  <DateOfBirth>6-11-1996</DateOfBirth>
+  <FrontEnd>Angular</FrontEnd>
+  <BackEnd>Nest</BackEnd>
+  <DataFormats>YAML</DataFormats>
+</User>

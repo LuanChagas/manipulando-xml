@@ -1,22 +1,27 @@
+import { Link } from "react-router-dom";
+
 const SideNav = () => {
   return (
     <nav className="border-r-2 border-gray-300 shadow-xl row-span-2">
       <div className="h-20"></div>
       <ul className=" ml-10 flex flex-col">
         <li className="pb-2">
-          <a href="#" className="p-2 hover:bg-gray-200   rounded-md">
+          <Link to="/uploadcsv" className="p-2 hover:bg-gray-200   rounded-md">
             Upload + csv
-          </a>
+          </Link>
         </li>
         <li className="pb-2">
-          <a href="#" className="p-2 hover:bg-gray-200   rounded-md">
+          <Link
+            to="/servidorcsv"
+            className="p-2 hover:bg-gray-200   rounded-md"
+          >
             Servidor csv
-          </a>
+          </Link>
         </li>
         <li className="pb-2">
-          <a href="#" className="p-2 hover:bg-gray-200   rounded-md">
+          <Link to="/uploadjson" className="p-2 hover:bg-gray-200   rounded-md">
             Json
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

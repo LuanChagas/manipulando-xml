@@ -1,7 +1,6 @@
+import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import SideNav from "../components/SideNav";
-import UploadCsv from "./UploadCsv";
-import UploadJson from "./UploadJson";
 
 const Home = () => {
   return (
@@ -9,7 +8,7 @@ const Home = () => {
       <SideNav />
       <Header />
       <main className="ml-2">
-        <UploadCsv />
+        <Outlet />
       </main>
     </section>
   );

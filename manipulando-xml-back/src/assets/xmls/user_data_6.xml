@@ -1,0 +1,8 @@
+<User>
+  <Name>Alice</Name>
+  <Age>18</Age>
+  <DateOfBirth>4-5-2003</DateOfBirth>
+  <FrontEnd>Ember JS</FrontEnd>
+  <BackEnd>Express</BackEnd>
+  <DataFormats>YAML</DataFormats>
+</User>

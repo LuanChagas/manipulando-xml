@@ -1,0 +1,8 @@
+<User>
+  <Name>Luan Chagas</Name>
+  <Age>20</Age>
+  <DateOfBirth>12-12-2012</DateOfBirth>
+  <FrontEnd>React JS</FrontEnd>
+  <BackEnd>Nest</BackEnd>
+  <DataFormats>XML + CSV</DataFormats>
+</User>

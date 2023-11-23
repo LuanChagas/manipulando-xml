@@ -1,0 +1,8 @@
+<User>
+  <Name>Alice</Name>
+  <Age>23</Age>
+  <DateOfBirth>14-8-2000</DateOfBirth>
+  <FrontEnd>React JS</FrontEnd>
+  <BackEnd>Nest</BackEnd>
+  <DataFormats>YAML</DataFormats>
+</User>

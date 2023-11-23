@@ -1,0 +1,8 @@
+<User>
+  <Name>Alice</Name>
+  <Age>23</Age>
+  <DateOfBirth>25-8-1993</DateOfBirth>
+  <FrontEnd>Angular</FrontEnd>
+  <BackEnd>Django</BackEnd>
+  <DataFormats>Binary</DataFormats>
+</User>

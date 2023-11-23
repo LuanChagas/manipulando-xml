@@ -1,0 +1,8 @@
+<User>
+  <Name>Carlos</Name>
+  <Age>21</Age>
+  <DateOfBirth>14-10-1998</DateOfBirth>
+  <FrontEnd>Angular</FrontEnd>
+  <BackEnd>Django</BackEnd>
+  <DataFormats>XML + CSV</DataFormats>
+</User>
