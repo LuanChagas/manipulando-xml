@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import useFetch from "../hooks/useFetch";
 import SvgCsv from "./SvgCsv";
+import Loading from "./Loading";
 
 type DonwloadProps = {
   urlDownload: string | undefined;
@@ -9,7 +10,7 @@ type DonwloadProps = {
 
 const Donwload = ({ urlDownload, donwloaded }: DonwloadProps) => {
   const [loading, setLoading] = useState(false);
-
+  const [isVisible, setIsVisible] = useState(false);
   const getDonwload = async () => {
     if (!urlDownload) return;
 
@@ -20,9 +21,17 @@ const Donwload = ({ urlDownload, donwloaded }: DonwloadProps) => {
     donwloaded(true);
   };
 
-  if (loading) return <h1>Carregando...</h1>;
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+  if (loading)
+    return (
+      <>
+        <Loading />
+      </>
+    );
   return (
-    <section className="flex flex-col items-center ">
+    <section className="flex flex-col items-center">
       <h3 className="text-2xl mb-5">Download</h3>
       <input
         id="donwload"
