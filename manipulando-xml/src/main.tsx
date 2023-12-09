@@ -1,7 +1,11 @@
 import React, { Children } from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.tsx";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  RouterProvider,
+  createBrowserRouter,
+} from "react-router-dom";
 import UploadCsv from "./pages/UploadCsv.tsx";
 import ServidorCsv from "./pages/ServidorCsv.tsx";
 import UploadJson from "./pages/UploadJson.tsx";
@@ -10,7 +14,12 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
+
     children: [
+      {
+        index: true,
+        element: <Navigate to="/uploadcsv" />,
+      },
       {
         path: "/uploadcsv",
         element: <UploadCsv />,

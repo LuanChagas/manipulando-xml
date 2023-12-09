@@ -1,15 +1,28 @@
 import { Outlet } from "react-router-dom";
 import Header from "../components/Header";
 import SideNav from "../components/SideNav";
+import { useState } from "react";
 
 const Home = () => {
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
+  const toggleSidebar = () => {
+    setIsSidebarOpen(!isSidebarOpen);
+  };
+
   return (
-    <section className="grid grid-cols-[200px_minmax(0,_1fr)] grid-rows-[80px_minmax(0,_1fr)] h-screen">
-      <SideNav />
-      <Header />
-      <main className="ml-2">
-        <Outlet />
-      </main>
+    <section
+      id="container"
+      className="grid grid-cols-1 grid-rows-[60px_1fr] h-screen md:grid-cols-1"
+    >
+      <Header onToggleSidebar={toggleSidebar} />
+
+      <div className="flex">
+        <SideNav isOpen={isSidebarOpen} onToggleSidebar={setIsSidebarOpen} />
+        <main className="flex-1">
+          <Outlet />
+        </main>
+      </div>
     </section>
   );
 };
